@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+$color-bg: #f4f4f4;
+$color-header-bg: #afeeee;
+$color-header-text: #696969;
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: $color-bg;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__item {
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header {
+    padding: 15px;
+    cursor: pointer;
+    background-color: $color-header-bg;
+    color: $color-header-text;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    flex: 1;
+  }
+
+  &__content {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+}
